@@ -98,7 +98,9 @@ const companies = [
     tag: "Consumer",
     href: "https://www.potherbazar.com/",
   }, // TODO: Pother Bazar URL
-  { label: "Way-Wise Trading", tag: "Trading", href: "#" }, // TODO: Trading URL
+  { label: "Way-Wise Trading", 
+    tag: "Trading", 
+    href: "https://waywisetrading.com/" }, // TODO: Trading URL
   {
     label: "Way-Wise Jobs",
     tag: "Recruitment",

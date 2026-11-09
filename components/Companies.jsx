@@ -22,7 +22,7 @@ const companies = [
     logo: "/images/cards/trading.svg",
     logoW: 180,
     logoH: 128,
-    href: "Way Wise Trading", // TODO: Trading website URL
+    href: "https://waywisetrading.com/", // TODO: Trading website URL
   },
   {
     id: 3,

@@ -61,7 +61,7 @@ const COLUMNS = [
     title: "Services",
     links: [
       { label: "Technology", href: "https://waywisetech.com/" },
-      { label: "Trading", href: "/services/trading" },
+      { label: "Trading", href: "https://waywisetrading.com/" },
       { label: "Recruitment", href: "https://waywisejobs.com/" },
       { label: "Consumer Businesses", href: "https://www.potherbazar.com/" },
     ],
