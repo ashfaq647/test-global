@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF } from "react-icons/fa";
-import { SlSocialInstagram } from "react-icons/sl";
+import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { PartnerWithUsLink } from "@/components/PartnerWithUs";
 
 // CTA banner + footer in one component (Figma 41:2330). The CTA starts right where the
@@ -33,8 +32,19 @@ const SOCIALS = [
     red: false,
     icon: FaFacebookF,
   },
-  { label: "X (Twitter)", href: "https://x.com/", red: false, path: "M3 3l7.2 9.6L3.4 21h1.8l5.8-6.6 4.9 6.6H21l-7.5-10L19.9 3h-1.8l-5.3 6-4.5-6H3zm3.4 1.4h1.6l9.6 15.2h-1.6L6.4 4.4z" },
-  { label: "Instagram", href: "https://instagram.com/", red: false, path: "M7.8 2h8.4A5.8 5.8 0 0122 7.8v8.4a5.8 5.8 0 01-5.8 5.8H7.8A5.8 5.8 0 012 16.2V7.8A5.8 5.8 0 017.8 2zm-.2 2A3.6 3.6 0 004 7.6v8.8A3.6 3.6 0 007.6 20h8.8a3.6 3.6 0 003.6-3.6V7.6A3.6 3.6 0 0016.4 4H7.6zm9.65 1.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z" },
+  // Same Font Awesome solid set as Facebook, so all three share one fill style and grid.
+  {
+    label: "YouTube",
+    href: "https://www.youtube.com/@WayWiseTech",
+    red: false,
+    icon: FaYoutube,
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/waywisetech",
+    red: false,
+    icon: FaLinkedinIn,
+  },
 ];
 
 // Figma 41:2330 shows only the Services column, with these four links; Quick Links was
@@ -60,14 +70,6 @@ const COLUMNS = [
 
 // Public Sans is loaded in app/layout.js
 const publicSans = "font-[family-name:var(--font-public-sans)]";
-
-function Icon({ d, className = "h-6 w-6 fill-white" }) {
-  return (
-    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-      <path d={d} />
-    </svg>
-  );
-}
 
 function ContactItem({ label, value, href, children }) {
   return (
@@ -166,14 +168,8 @@ export default function Footer() {
                     s.red ? "bg-[rgba(224,0,0,0.15)]" : "bg-[rgba(238,238,238,0.1)]"
                   }`}
                 >
-                  {s.icon ? (
-                    <s.icon className="h-5 w-5 text-white" aria-hidden="true" />
-                  ) : (
-                    <Icon
-                      d={s.path}
-                      className={`h-6 w-6 ${s.red ? "fill-[#e00000] group-hover:fill-white group-active:fill-white" : "fill-white"}`}
-                    />
-                  )}
+                  <s.icon className="h-5 w-5 text-white" aria-hidden="true" />
+
                 </a>
               ))}
             </div>

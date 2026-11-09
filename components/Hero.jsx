@@ -16,7 +16,7 @@ const companyCards = [
   },
   {
     name: "Way Wise Trading",
-    href: "#", // TODO: paste Trading website URL
+    href: "https://waywisetrading.com/", // TODO: paste Trading website URL
     logo: "/images/cards/trading.svg",
     logoW: 110,
     logoH: 78,
