@@ -60,10 +60,10 @@ const COLUMNS = [
   {
     title: "Services",
     links: [
-      { label: "Technology", href: "https://waywisetech.com/" },
-      { label: "Trading", href: "https://waywisetrading.com/" },
-      { label: "Recruitment", href: "https://waywisejobs.com/" },
-      { label: "Consumer Businesses", href: "https://www.potherbazar.com/" },
+      { label: "Technology", href: "https://waywisetech.com/", external:true },
+      { label: "Trading", href: "https://waywisetrading.com/", external:true },
+      { label: "Recruitment", href: "https://waywisejobs.com/",external:true },
+      { label: "Consumer Businesses", href: "https://www.potherbazar.com/", external:true },
     ],
   },
 ];
